@@ -1,0 +1,24 @@
+<section class="product-section" >
+     <div class="product-content" *ngFor="let img of listImg; let i = index">
+       <div class="content-title">
+          <span class="subtitle">{{ listTitle[i].subtitle }}</span>
+          <h4 class="title">{{ listTitle[i].title }}</h4>
+       </div>
+     <img class="product-img" [src]="img" alt=""
+    [ngClass]="{
+      'primeira-imagem': i === 0,
+      'segunda-imagem': i === 1,
+      'terceira-imagem': i === 2
+    }"
+     >
+     </div>
+     <div class="auxiliary-img"><img class="secondary-img" src="assets/images/saca-rolha.png" alt=""> </div>
+
+        <div class="tertiary-image">
+               <img src="assets/images/effect.png" alt="">
+        </div>
+</section>
+
+<div class="content-estoque">
+   <img src="assets/images/barril-w.jpg" alt="">
+</div>

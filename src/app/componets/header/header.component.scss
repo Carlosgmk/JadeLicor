@@ -1,0 +1,176 @@
+* {
+  background-color: #e5c9a6;
+}
+
+nav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5% 0px 5%;
+  // border: 1px solid red;
+
+  .logo-img {
+    width: 120px;
+    height: 40px;
+    // border: 1px solid red;
+  }
+
+  .nav-container {
+    display: flex;
+
+    &__link {
+      list-style: none;
+      margin-right: 2.5rem;
+
+      a {
+        text-decoration: none;
+        font-family: "Libre Baskerville", serif;
+        // font-weight: bold;
+        color: #322721;
+        // background-color: rgb(255, 255, 255);
+      }
+    }
+  }
+
+  .container-hamburguer{
+      display: none;
+      border: none;
+      width: 30px;
+      cursor: pointer;
+
+      .fas{
+            font-size: 18px;
+            color: #322721;
+      }
+  }
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -120%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #E5C9A6;
+  background-image: url("/assets/images/paisagem-rural.png");
+  background-size: cover; /* cobre toda a área */
+  // background-position: top;
+  background-repeat: no-repeat;
+  // posiciona a imagem da vila
+  background-position: center top 255px;
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  z-index: 999;
+  text-align: center;
+
+  &.active {
+    right: 0;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #322721;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+
+    li {
+      margin: 50px 0;
+
+      a {
+        font-size: 24px;
+        color: #322721;
+        text-decoration: none;
+        font-family: "Libre Baskerville", serif;
+        border-bottom: 1px solid #322721;
+      }
+    }
+  }
+}
+
+
+}
+
+@media (min-width: 1000px) {
+  nav {
+    .nav-container {
+      display: flex;
+
+      &__link {
+        list-style: none;
+        margin-right: 4.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  /* Estilos aplicados SOMENTE entre 640px e 768px */
+  nav {
+    .logo-img {
+      width: 110px;
+      height: 35px;
+      // border: 1px solid red;
+    }
+
+    .nav-container {
+      a {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+  /* Estilos aplicados SOMENTE entre 640px e 768px */
+  nav {
+    .logo-img {
+      width: 100px;
+      height: 30px;
+      // border: 1px solid red;
+    }
+
+    .nav-container {
+      &__link {
+        margin-right: 1.6rem;
+
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 479px)  {
+  /* Estilos aplicados SOMENTE entre 640px e 768px */
+  nav {
+    .logo-img {
+      width: 100px;
+      height: 30px;
+      // border: 1px solid red;
+    }
+
+    .nav-container {
+      display: none;
+
+    }
+
+    .container-hamburguer{
+      display: inline;
+
+  }
+}
+}

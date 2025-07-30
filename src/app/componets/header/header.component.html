@@ -1,0 +1,27 @@
+<nav>
+     <img class="logo-img" src="assets/images/jade-logo.png" alt="">
+
+     <ul class="nav-container">
+          <li class="nav-container__link"><a href="">Início</a></li>
+          <li class="nav-container__link"><a href="https://licorjade.mycartpanda.com/checkout#no-back-button">Produtos</a></li>
+          <li class="nav-container__link"><a href="">Sobre</a></li>
+     </ul>
+
+     <!-- //mobile -->
+     <button class="container-hamburguer" (click)="menuIsOpen()">
+           <i class="fas fa-bars"></i>
+     </button>
+
+
+     <div class="mobile-menu" [class.active]="openMenu">
+          <button class="close-btn" (click)="menuIsOpen()">
+               <i class="fas fa-times"></i>
+          </button>
+  <ul>
+    <li><a href="">Início</a></li>
+    <li><a href="https://licorjade.mycartpanda.com/checkout#no-back-button" target="_blank">Produtos</a></li>
+    <li><a href="">Sobre</a></li>
+  </ul>
+</div>
+</nav>
+

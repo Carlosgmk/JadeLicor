@@ -1,0 +1,29 @@
+
+
+
+:host {
+  display: flex;
+  flex-direction: column;
+  // height: 100%;
+  /* Garante que ocupe pelo menos a altura da tela */
+}
+
+main {
+  flex: 1; /* Faz o main ocupar todo o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  background-color: #E5D4BA;
+  height: 100vh;
+  /* Remova o overflow: hidden se não for absolutamente necessário */
+}
+
+/* Adicione isso para garantir que header e footer fiquem colados */
+app-header {
+  flex-shrink: 0; /* Impede que o header encolha */
+}
+
+app-footer {
+  flex-shrink: 0; /* Impede que o footer encolha */
+ 
+}
+

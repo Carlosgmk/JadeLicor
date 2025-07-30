@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+section {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #e5c9a6;
+  background-image: url("/assets/images/paisagem-rural.png");
+  background-size: cover; /* cobre toda a área */
+  // background-position: top;
+  background-repeat: no-repeat;
+  // posiciona a imagem da vila
+  background-position: center top 255px;
+  overflow: hidden;
+
+  .details-product {
+    margin-top: 75px;
+    // border: 1px solid red;
+
+    .sub-title {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: #c29250;
+      text-transform: uppercase;
+      font-family: "Libre Baskerville", serif;
+      letter-spacing: 1px;
+      //  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+    }
+
+    .title {
+      font-size: 62px;
+      font-family: "Cinzel", serif;
+      font-weight: 500;
+      color: #482817;
+      //  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+    }
+
+    .desc {
+      margin-top: 12px;
+      font-size: 14px;
+      font-family: "Libre Baskerville", serif;
+      color: #2b211c;
+      line-height: 1.6;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    }
+
+    .product-process {
+      margin-top: 25px;
+      border-bottom: 1px solid #482817;
+      border-top: 1px solid #482817;
+      text-align: center;
+       padding: 10px 0px;
+       color: #ffffff;
+
+      .buy-item {
+        text-align: center;
+        padding: 10px 0px;
+        color: #482817;
+        text-decoration: none;
+        //    filter: drop-shadow(0 4px 6px #00000066);
+        letter-spacing: 1px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: bold;
+        font-size: 22px;
+        text-transform: uppercase;
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: #482817;
+
+            .buy-item {
+          color: #ffffff;
+        }
+
+      }
+    }
+  }
+
+  .container-product {
+    margin-right: 50px;
+
+    .content-product {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 60%;
+      border-radius: 50%;
+      background-color: #c2a48744;
+      margin-top: 80px;
+
+      .product {
+        margin: 20px 0px;
+        //    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));
+        width: 270px;
+        height: 450px;
+        // background-color: aqua;
+      }
+    }
+  }
+  .m-product-process {
+    margin: 30px 0px;
+    border-bottom: 1px solid #482817;
+    border-top: 1px solid #482817;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0px;
+    
+    letter-spacing: 1px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    width: 90%;
+    display: none;
+    background-color: #482817;
+
+    a{
+          text-decoration: none;
+          color:  #f5ebda;
+          padding: 10px 0px;
+          
+    }
+
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1100px) {
+  section {
+    .details-product {
+      margin-top: 70px;
+
+      .desc {
+        max-width: 490px;
+      }
+
+      .product-process {
+        max-width: 480px;
+      }
+    }
+
+    .container-product {
+      margin-right: 0px;
+
+      .content-product {
+        margin-top: 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  section {
+    .details-product {
+      margin-top: 70px;
+      text-align: center;
+
+      .sub-title {
+        margin-bottom: 7px;
+        font-size: 16px;
+
+        //  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+      }
+
+      .title {
+        font-size: 48px;
+      }
+
+      .desc {
+        max-width: 440px;
+        line-height: 2;
+        font-size: 12px;
+      }
+
+      .product-process {
+        // max-width: 400px;
+        margin-left: 10px;
+      }
+    }
+
+    .container-product {
+      margin-right: 0px;
+
+      .content-product {
+        margin-top: 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .details-product {
+      margin-top: 70px;
+      text-align: center;
+
+      .sub-title {
+        margin-bottom: 7px;
+        font-size: 16px;
+
+        //  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+      }
+
+      .title {
+        font-size: 48px;
+      }
+
+      .desc {
+        max-width: 430px;
+        line-height: 2;
+        font-size: 14px;
+      }
+
+      .product-process {
+        display: none;
+      }
+    }
+
+    .container-product {
+      margin-right: 0px;
+
+      .content-product {
+        margin-top: 30px;
+      }
+    }
+
+    .m-product-process {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .details-product {
+      margin-top: 70px;
+      text-align: center;
+
+      .sub-title {
+        margin-bottom: 7px;
+        font-size: 12px;
+
+        //  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+      }
+
+      .title {
+        font-size: 38px;
+      }
+
+      .desc {
+        // max-width: 430px;
+        line-height: 2;
+        font-size: 12px;
+        margin: 15px 20px;
+      }
+
+      .product-process {
+        display: none;
+      }
+    }
+
+    .container-product {
+      margin-right: 0px;
+
+      .content-product {
+        // margin-top: 30px;
+        margin-top: 1.875rem;
+        // width: 300px;
+        width: 18.75rem;
+       
+        // width: 320px;
+      }
+
+      .product {
+        // margin: 20px 0px 20px 0px;
+        //    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));
+        width: 200px !important;
+        height: 330px !important;
+        // background-color: aqua;
+      }
+    }
+
+    .m-product-process {
+      display: inline;
+      // margin-bottom: 40px;
+      margin-bottom: 2.5rem;
+      margin-top: 2.5rem;
+      width: 80%;
+    }
+  }
+}
