@@ -4,7 +4,7 @@
   overflow: hidden;
   position: relative;
 
-  background-image: url("/assets/images/testeImg.png");
+  background-image: url("../../../assets/images/testeImg.png");
   background-repeat: no-repeat;
   background-position: center -120px; /* Centraliza a imagem */
   background-size: cover;             /* Faz a imagem preencher todo o container */
@@ -133,7 +133,7 @@
   overflow: hidden;
   position: relative;
 
-  background-image: url("/assets/images/testeImg.png");
+  background-image: url("../../../assets/images/testeImg.png");
   // background-repeat: no-repeat;
   background-position: center right; /* Centraliza a imagem */
   background-size: cover;
@@ -206,10 +206,13 @@
 
 
   .c-content {
-    // height: 280px;
+    height: 350px;  //n t
     width: 320px;
     box-shadow: none;
     background-color: transparent;
+    
+  
+
     .header-newsletter {
         text-align: center;
 

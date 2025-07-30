@@ -5,7 +5,7 @@ section {
   display: flex;
   justify-content: space-around;
   background-color: #e5c9a6;
-  background-image: url("/assets/images/paisagem-rural.png");
+  background-image: url("../../../assets/images/paisagem-rural.png");
   background-size: cover; /* cobre toda a área */
   // background-position: top;
   background-repeat: no-repeat;
@@ -278,11 +278,13 @@ section {
       margin-right: 0px;
 
       .content-product {
+        // adicioeni os 3 importantezsss hj 
         // margin-top: 30px;
         margin-top: 1.875rem;
         // width: 300px;
         width: 18.75rem;
-       
+        // height: 0px;
+        height: 400px;
         // width: 320px;
       }
 

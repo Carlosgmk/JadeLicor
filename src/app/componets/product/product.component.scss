@@ -145,26 +145,18 @@
           flex-direction: column;
           align-items: center;
 
+                    .c-p-container-info-price{
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                margin-left: 75px;
+
           .content-table-price{
             display: flex;
             justify-content: initial;
-
-            .unit{
-              margin-left: -114px !important;
-              // border: 1px solid red;
-              // background-color: green !important;
-            }
-
-            .unit-second{
-              margin-left: 15px;
-              //  border: 1px solid green;
-            }
-
-            .unit-terciary{
-              margin-left: 25px;
-              // border: 1px solid rgb(0, 0, 0);
-            }
-
+            // background-color: red;
+          }
 
                     .c-c-price__desc {
             // background-color: blue;
@@ -411,29 +403,37 @@
           justify-content: center;
           flex-direction: column;
           align-items: center;
+         
+          .c-p-container-info-price{
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            margin-left: 70px;
 
-          .content-table-price{
+               .content-table-price{
             display: flex;
             justify-content: initial;
             
+            
           
-            .unit{
-              margin-left: -80px !important;
-              // border: 1px solid red;
-              // background-color: green !important;
-            }
+            // .unit{
+            //   margin-left: -80px !important;
+            //   // border: 1px solid red;
+            //   // background-color: green !important;
+            // }
 
-            .unit-second{
-              margin-left: 60px;
-              //  border: 1px solid green;
-              // background-color: #9e845c;
-            }
+            // .unit-second{
+            //   margin-left: 60px;
+            //   //  border: 1px solid green;
+            //   // background-color: #9e845c;
+            // }
 
-            .unit-terciary{
-              margin-left: 68px;
-              // background-color: rgb(230, 0, 38);
-              // border: 1px solid rgb(0, 0, 0);
-            }
+            // .unit-terciary{
+            //   margin-left: 68px;
+            //   // background-color: rgb(230, 0, 38);
+            //   // border: 1px solid rgb(0, 0, 0);
+            // }
 
 
                     .c-c-price__desc {
@@ -475,6 +475,11 @@
             font-size: 16px;
           }
           }
+
+          }
+
+
+       
 
   
         }
@@ -635,31 +640,41 @@
           flex-direction: column;
           align-items: center;
 
+               .c-p-container-info-price{
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+                margin-left: 72px;
+
           .content-table-price{
             display: flex;
             justify-content: initial;
             
           
-            .unit{
-              // margin-left: -65px !important;
-              margin-left: -4.0625rem !important;
-              // border: 1px solid red;
-              // background-color: green !important;
-            }
+            // .unit{
 
-            .unit-second{
-              // margin-left: 65px;
-              margin-left: 4.0625rem;
-              //  border: 1px solid green;
-              // background-color: #9e845c;
-            }
+            //   // aidiconei os iportantes no etxto hj 
 
-            .unit-terciary{
-              // margin-left: 71px;
-              margin-left: 4.4375rem;
-              // background-color: pink;
-              // border: 1px solid rgb(0, 0, 0);
-            }
+            //   // margin-left: -65px !important;
+            //   margin-left: -4.0625rem !important;
+            //   // border: 1px solid red;
+            //   // background-color: green !important;
+            // }
+
+            // .unit-second{
+            //   // margin-left: 65px;
+            //   margin-left: 4.0625rem !important;
+            //   //  border: 1px solid green;
+            //   // background-color: #9e845c;
+            // }
+
+            // .unit-terciary{
+            //   // margin-left: 71px;
+            //   margin-left: 4.4375rem !important;
+            //   // background-color: pink;
+            //   // border: 1px solid rgb(0, 0, 0);
+            // }
 
 
                     .c-c-price__desc {
@@ -701,7 +716,7 @@
             font-size: 14px;
           }
           }
-
+        }
   
         }
 

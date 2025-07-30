@@ -28,7 +28,7 @@
             "outputPath": "dist/jade",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "baseHref": "/jade/",
+            "baseHref": "/",
             "polyfills": [
               "zone.js"
             ],
